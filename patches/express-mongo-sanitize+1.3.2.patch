@@ -1,0 +1,95 @@
+diff --git a/node_modules/express-mongo-sanitize/index.js b/node_modules/express-mongo-sanitize/index.js
+index dc31119..51b9923 100644
+--- a/node_modules/express-mongo-sanitize/index.js
++++ b/node_modules/express-mongo-sanitize/index.js
+@@ -1,7 +1,7 @@
+ 'use strict';
+ 
+ var TEST_REGEX = /^\$|\./,
+-    REPLACE_REGEX = /^\$|\./g;
++  REPLACE_REGEX = /^\$|\./g;
+ 
+ function isPlainObject(obj) {
+   return typeof obj === 'object' && obj !== null;
+@@ -9,14 +9,13 @@ function isPlainObject(obj) {
+ 
+ function withEach(target, cb) {
+   var act = function(obj) {
+-    if(Array.isArray(obj)) {
++    if (Array.isArray(obj)) {
+       obj.forEach(act);
+-
+-    } else if(isPlainObject(obj)) {
++    } else if (isPlainObject(obj)) {
+       Object.keys(obj).forEach(function(key) {
+         var val = obj[key];
+         var resp = cb(obj, val, key);
+-        if(resp.shouldRecurse) {
++        if (resp.shouldRecurse) {
+           act(obj[resp.key || key]);
+         }
+       });
+@@ -29,7 +28,7 @@ function withEach(target, cb) {
+ function has(target) {
+   var hasProhibited = false;
+   withEach(target, function(obj, val, key) {
+-    if(TEST_REGEX.test(key)) {
++    if (TEST_REGEX.test(key)) {
+       hasProhibited = true;
+       return { shouldRecurse: false };
+     } else {
+@@ -40,20 +39,35 @@ function has(target) {
+   return hasProhibited;
+ }
+ 
+-function sanitize(target, options) {
++function sanitize(target, options, maliciousInputIdentified, req) {
+   options = options || {};
+ 
+   var replaceWith = null;
+-  if(!(TEST_REGEX.test(options.replaceWith))) {
++  if (!TEST_REGEX.test(options.replaceWith)) {
+     replaceWith = options.replaceWith;
+   }
+ 
+   withEach(target, function(obj, val, key) {
+     var shouldRecurse = true;
+ 
+-    if(TEST_REGEX.test(key)) {
++    if (TEST_REGEX.test(key)) {
++      var getClientIp = function(request) {
++        var ipAddress = request.connection.remoteAddress;
++        if (!ipAddress) {
++          return '';
++        } // convert from "::ffff:192.0.0.1"  to "192.0.0.1"
++        if (ipAddress.substr(0, 7) == '::ffff:') {
++          ipAddress = ipAddress.substr(7);
++        }
++        return ipAddress;
++      };
++
++      const requestorsIp = getClientIp(req);
++
++      maliciousInputIdentified(key, requestorsIp);
++
+       delete obj[key];
+-      if(replaceWith) {
++      if (replaceWith) {
+         key = key.replace(REPLACE_REGEX, replaceWith);
+         obj[key] = val;
+       } else {
+@@ -70,11 +84,11 @@ function sanitize(target, options) {
+   return target;
+ }
+ 
+-function middleware(options) {
++function middleware(options, maliciousInputIdentified) {
+   return function(req, res, next) {
+     ['body', 'params', 'query'].forEach(function(k) {
+-      if(req[k]) {
+-        req[k] = sanitize(req[k], options);
++      if (req[k]) {
++        req[k] = sanitize(req[k], options, maliciousInputIdentified, req);
+       }
+     });
+     next();
