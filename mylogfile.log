@@ -2366,3 +2366,184 @@ TypeError: next is not a function
     at handler (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/topology.js:1000:24)
     at wireProtocol.(anonymous function) (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/server.js:457:5)
     at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/connection/pool.js:408:18 
+2019-12-05 20:03:40.278 ERROR Review with ID 5de305bd8ceef352fb661c9a was not found.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"0000"}
+Error: Review with ID 5de305bd8ceef352fb661c9a was not found.
+    at exports.updateReview.catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/reviewController.js:25:7)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2019-12-05 20:04:01.139 ERROR Cannot read property '_id' of null
+{"statusCode":500,"status":"error"}
+TypeError: Cannot read property '_id' of null
+    at exports.updateReview.catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/reviewController.js:28:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2019-12-06 19:37:51.755 ERROR Cat't find /api/v1/tours/tours-within/223/center/-40,45/unit/mi on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /api/v1/tours/tours-within/223/center/-40,45/unit/mi on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-06 19:38:27.641 ERROR Cat't find /api/v1/tours/tours-within/223/center/-40,45/unit/mi on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /api/v1/tours/tours-within/223/center/-40,45/unit/mi on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-06 19:39:18.405 ERROR Cat't find /api/v1/tours/tours-within/111/center/11,11/unit/unit%27 on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /api/v1/tours/tours-within/111/center/11,11/unit/unit%27 on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-06 19:39:39.282 ERROR Cat't find /api/v1/tours/tours-within/111/center/11,11/unit/unit on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /api/v1/tours/tours-within/111/center/11,11/unit/unit on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-06 19:40:17.894 ERROR Cat't find /api/v1/tours/tours-within/111/center/11,11/unit/unit on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /api/v1/tours/tours-within/111/center/11,11/unit/unit on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-07 08:36:54.569 ERROR Tour with ID 5de99b1bee3b7200ff66b7df was not found.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"0000"}
+Error: Tour with ID 5de99b1bee3b7200ff66b7df was not found.
+    at docNotFound (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/handlerFactory.js:4:3)
+    at catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/handlerFactory.js:30:27)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2019-12-07 08:37:54.988 ERROR Can't extract geo keys: { _id: ObjectId('5debab323a8ec52c1f624538'), startLocation: { type: "Point" }, ratingsQuantity: 0, images: [], createdAt: new Date(1575725766828), startDates: [], secretTour: false, rating: 4.5, ratingsAverage: 4.5, guides: [ ObjectId('5dd72e2b10569e1692a4d60f'), ObjectId('5dd72e6110569e1692a4d610') ], name: "333 Test TourTourTourTourTour", duration: 10, difficulty: "easy", maxGroupSize: 25, price: 397, summary: "Breathtaking hike through the Canadian Banff National Park", description: "Ut enim ad minim veniam", locations: [], updatedAt: new Date(1575725766828), slug: "333-test-tourtourtourtourtour", __v: 0 }  Point must be an array or object
+{"driver":true,"name":"MongoError","index":0,"code":16755,"errmsg":"Can't extract geo keys: { _id: ObjectId('5debab323a8ec52c1f624538'), startLocation: { type: \"Point\" }, ratingsQuantity: 0, images: [], createdAt: new Date(1575725766828), startDates: [], secretTour: false, rating: 4.5, ratingsAverage: 4.5, guides: [ ObjectId('5dd72e2b10569e1692a4d60f'), ObjectId('5dd72e6110569e1692a4d610') ], name: \"333 Test TourTourTourTourTour\", duration: 10, difficulty: \"easy\", maxGroupSize: 25, price: 397, summary: \"Breathtaking hike through the Canadian Banff National Park\", description: \"Ut enim ad minim veniam\", locations: [], updatedAt: new Date(1575725766828), slug: \"333-test-tourtourtourtourtour\", __v: 0 }  Point must be an array or object","statusCode":500,"status":"error"}
+MongoError: Can't extract geo keys: { _id: ObjectId('5debab323a8ec52c1f624538'), startLocation: { type: "Point" }, ratingsQuantity: 0, images: [], createdAt: new Date(1575725766828), startDates: [], secretTour: false, rating: 4.5, ratingsAverage: 4.5, guides: [ ObjectId('5dd72e2b10569e1692a4d60f'), ObjectId('5dd72e6110569e1692a4d610') ], name: "333 Test TourTourTourTourTour", duration: 10, difficulty: "easy", maxGroupSize: 25, price: 397, summary: "Breathtaking hike through the Canadian Banff National Park", description: "Ut enim ad minim veniam", locations: [], updatedAt: new Date(1575725766828), slug: "333-test-tourtourtourtourtour", __v: 0 }  Point must be an array or object
+    at Function.create (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/error.js:44:12)
+    at toError (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/utils.js:150:22)
+    at coll.s.topology.insert (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/operations/common_functions.js:266:39)
+    at handler (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/topology.js:1000:24)
+    at wireProtocol.(anonymous function) (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/server.js:457:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/connection/pool.js:408:18
+    at process._tickCallback (internal/process/next_tick.js:61:11) 
+2019-12-07 08:40:37.808 ERROR Can't extract geo keys: { _id: ObjectId('5debabd5f233db2cc9438faa'), startLocation: { type: "Point", coordinates: [] }, ratingsQuantity: 0, images: [], createdAt: new Date(1575726034913), startDates: [], secretTour: false, rating: 4.5, ratingsAverage: 4.5, guides: [ ObjectId('5dd72e2b10569e1692a4d60f'), ObjectId('5dd72e6110569e1692a4d610') ], name: "333 Test TourTourTourTourTour", duration: 10, difficulty: "easy", maxGroupSize: 25, price: 397, summary: "Breathtaking hike through the Canadian Banff National Park", description: "Ut enim ad minim veniam", locations: [], updatedAt: new Date(1575726034913), slug: "333-test-tourtourtourtourtour", __v: 0 }  Point must only contain numeric elements
+{"driver":true,"name":"MongoError","index":0,"code":16755,"errmsg":"Can't extract geo keys: { _id: ObjectId('5debabd5f233db2cc9438faa'), startLocation: { type: \"Point\", coordinates: [] }, ratingsQuantity: 0, images: [], createdAt: new Date(1575726034913), startDates: [], secretTour: false, rating: 4.5, ratingsAverage: 4.5, guides: [ ObjectId('5dd72e2b10569e1692a4d60f'), ObjectId('5dd72e6110569e1692a4d610') ], name: \"333 Test TourTourTourTourTour\", duration: 10, difficulty: \"easy\", maxGroupSize: 25, price: 397, summary: \"Breathtaking hike through the Canadian Banff National Park\", description: \"Ut enim ad minim veniam\", locations: [], updatedAt: new Date(1575726034913), slug: \"333-test-tourtourtourtourtour\", __v: 0 }  Point must only contain numeric elements","statusCode":500,"status":"error"}
+MongoError: Can't extract geo keys: { _id: ObjectId('5debabd5f233db2cc9438faa'), startLocation: { type: "Point", coordinates: [] }, ratingsQuantity: 0, images: [], createdAt: new Date(1575726034913), startDates: [], secretTour: false, rating: 4.5, ratingsAverage: 4.5, guides: [ ObjectId('5dd72e2b10569e1692a4d60f'), ObjectId('5dd72e6110569e1692a4d610') ], name: "333 Test TourTourTourTourTour", duration: 10, difficulty: "easy", maxGroupSize: 25, price: 397, summary: "Breathtaking hike through the Canadian Banff National Park", description: "Ut enim ad minim veniam", locations: [], updatedAt: new Date(1575726034913), slug: "333-test-tourtourtourtourtour", __v: 0 }  Point must only contain numeric elements
+    at Function.create (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/error.js:44:12)
+    at toError (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/utils.js:150:22)
+    at coll.s.topology.insert (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/operations/common_functions.js:266:39)
+    at handler (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/topology.js:1000:24)
+    at wireProtocol.(anonymous function) (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/server.js:457:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/connection/pool.js:408:18
+    at process._tickCallback (internal/process/next_tick.js:61:11) 
+2019-12-07 08:41:14.204 ERROR Can't extract geo keys: { _id: ObjectId('5debabfa7b0cad2ce4f16382'), startLocation: { type: "Point" }, ratingsQuantity: 0, images: [], createdAt: new Date(1575726069979), startDates: [], secretTour: false, rating: 4.5, ratingsAverage: 4.5, guides: [ ObjectId('5dd72e2b10569e1692a4d60f'), ObjectId('5dd72e6110569e1692a4d610') ], name: "333 Test TourTourTourTourTour", duration: 10, difficulty: "easy", maxGroupSize: 25, price: 397, summary: "Breathtaking hike through the Canadian Banff National Park", description: "Ut enim ad minim veniam", locations: [], updatedAt: new Date(1575726069979), slug: "333-test-tourtourtourtourtour", __v: 0 }  Point must be an array or object
+{"driver":true,"name":"MongoError","index":0,"code":16755,"errmsg":"Can't extract geo keys: { _id: ObjectId('5debabfa7b0cad2ce4f16382'), startLocation: { type: \"Point\" }, ratingsQuantity: 0, images: [], createdAt: new Date(1575726069979), startDates: [], secretTour: false, rating: 4.5, ratingsAverage: 4.5, guides: [ ObjectId('5dd72e2b10569e1692a4d60f'), ObjectId('5dd72e6110569e1692a4d610') ], name: \"333 Test TourTourTourTourTour\", duration: 10, difficulty: \"easy\", maxGroupSize: 25, price: 397, summary: \"Breathtaking hike through the Canadian Banff National Park\", description: \"Ut enim ad minim veniam\", locations: [], updatedAt: new Date(1575726069979), slug: \"333-test-tourtourtourtourtour\", __v: 0 }  Point must be an array or object","statusCode":500,"status":"error"}
+MongoError: Can't extract geo keys: { _id: ObjectId('5debabfa7b0cad2ce4f16382'), startLocation: { type: "Point" }, ratingsQuantity: 0, images: [], createdAt: new Date(1575726069979), startDates: [], secretTour: false, rating: 4.5, ratingsAverage: 4.5, guides: [ ObjectId('5dd72e2b10569e1692a4d60f'), ObjectId('5dd72e6110569e1692a4d610') ], name: "333 Test TourTourTourTourTour", duration: 10, difficulty: "easy", maxGroupSize: 25, price: 397, summary: "Breathtaking hike through the Canadian Banff National Park", description: "Ut enim ad minim veniam", locations: [], updatedAt: new Date(1575726069979), slug: "333-test-tourtourtourtourtour", __v: 0 }  Point must be an array or object
+    at Function.create (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/error.js:44:12)
+    at toError (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/utils.js:150:22)
+    at coll.s.topology.insert (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/operations/common_functions.js:266:39)
+    at handler (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/topology.js:1000:24)
+    at wireProtocol.(anonymous function) (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/server.js:457:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/connection/pool.js:408:18
+    at process._tickCallback (internal/process/next_tick.js:61:11) 
+2019-12-07 08:43:06.502 ERROR You do not have a permission to perform this action.
+{"statusCode":403,"status":"fail","isOperational":true,"errorCode":"RT-01"}
+Error: You do not have a permission to perform this action.
+    at catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/authController/restrictTo.js:12:9)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/catchAsync.js:3:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/authController/protectRoute.js:62:3)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2019-12-07 09:11:27.068 ERROR tours is not defined
+{"statusCode":500,"status":"error"}
+ReferenceError: tours is not defined
+    at exports.getDistances.catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/tourController.js:165:14)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/catchAsync.js:3:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:317:13) 
+2019-12-07 10:36:10.375 ERROR Unexpected token e in JSON at position 288
+{"expose":true,"statusCode":400,"status":400,"body":"{\n    \"/*========= ADMIN USER =========*/\": \"\",\n    \"email\": \"admin@natours.io\",\n    \"1/email\": \"loulou@example.com\",\n    \"2/email\": \"sophie@example.com\",\n    \"3/email\": \"ayls@example.com\",\n    \"4/email\": \"leo@example.com\",\n    \"/*========= REGULAR USER ========*/\": \"\",\n    \"password\": test1234\n}","type":"entity.parse.failed"}
+SyntaxError: Unexpected token e in JSON at position 288
+    at JSON.parse (<anonymous>)
+    at parse (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/raw-body/index.js:224:16)
+    at done (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1129:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19) 

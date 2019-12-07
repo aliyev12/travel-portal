@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const slugify = require('slugify');
 const tourShape = require('./shapes/tourShape');
 const User = require('./userModel');
+const { fromNow } = require('../utils');
 
 const tourSchema = new mongoose.Schema(tourShape, {
   timestamps: true,
@@ -9,35 +10,108 @@ const tourSchema = new mongoose.Schema(tourShape, {
   toObject: { virtuals: true }
 });
 
+/*=========*/
+/* INDEXES */
+/*=========*/
+
 // Create an index for price. When declaring a field as an index, it will be faster
 // and more efficient for DB to search for docs based on that index
 // Setting index to 1 means ascending order, and -1 is in descending order
 tourSchema.index({ price: 1, ratingsAverage: -1 });
 tourSchema.index({ slug: 1 });
+tourSchema.index({ startLocation: '2dsphere' });
+
+/*================================*/
+/* SET CREATED & UPDATED FROM NOW */
+/*================================*/
 
 tourSchema.virtual('updatedFromNow').get(function() {
   if (!this.updatedAt) return;
   return fromNow(this.updatedAt);
 });
-
 tourSchema.virtual('createdFromNow').get(function() {
   if (!this.createdAt) return;
   return fromNow(this.createdAt);
 });
 
-// This is virtual populate for reviews
+/*============================================================*/
+/* CREATE REVIEWS PROP ON TOUR THAT ADDS REFERENCE TO REVIEWS */
+/*============================================================*/
+
+// This is virtual populate for reviews. It is so that we can create a
+// two way reference where each review refers to a tour and each tour
+// refers to review. Instead of manually setting this relationship, we can create
+// mongoose virtual field that does the same thing.
 tourSchema.virtual('reviews', {
   ref: 'Review',
   foreignField: 'tour',
   localField: '_id'
 });
 
-/*=== !!! FOR LEARNING ONLY !!! - UNCOMMENT AND DO STUFF WITH IT IF NEEDED ===*/
+/*=====================*/
+/* SET SLUG - PRE SAVE */
+/*=====================*/
+
+// DOCUMENT MIDDLEWARE: runs before the .save() command and the .create() command but not when using .insertMany()
+tourSchema.pre('save', function(next) {
+  this.slug = slugify(this.name, { lower: true });
+  next();
+});
+
+/*====================================================*/
+/* EXCLUDE SECRET TOURS AND SET START DATE - PRE FIND */
+/*====================================================*/
+
+// Pre-query hook for any query that starts with word "find", e.g.: find(), findOne(), findMany() etc...
+tourSchema.pre(/^find/, function(next) {
+  this.find({ secretTour: { $ne: true } });
+
+  this.start = Date.now();
+  next();
+});
+
+/*=====================================*/
+/* POPULATE GUIDES IN TOURS - PRE FIND */
+/*=====================================*/
+
+tourSchema.pre(/^find/, function(next) {
+  this.populate({
+    path: 'guides',
+    select: '-__v -passwordChangedAt'
+  });
+  next();
+});
+
+/*======================*/
+/* EXCLUDE SECRET TOURS */
+/*======================*/
+
+// /* Commented out for now because this one conflicts with .getDistances
+// controller. There, when using $geoNear aggregate, it always needs to
+// be the first ggregate in this.pipeline() array */
+// // Exclude all secret tours when hitting 'tours/tour-stats' endpoint
+// // AGGREGATION MIDDLEWARE
+// tourSchema.pre('aggregate', function(next) {
+//   console.log('this.pipeline() = ', this.pipeline());
+
+//   this.pipeline().unshift({ $match: { secretTour: { $ne: true } } });
+//   next();
+// });
+
+/*=====================*/
+/* UPPERCASE TOUR NAME */
+/*=====================*/
+
 // // THE VIRTUAL BELOW WILL TURN NAME TO UPPERCASE
 // tourSchema.virtual('nameUpper').get(function() {
 //   if (this.name) return this.name.toUpperCase();
 //   return '';
 // });
+
+/*==========================*/
+/* SHORTEN DESC TO 50 CHARS */
+/*==========================*/
+
 // // RETURNS A SHORTER DESCRIPTION
 // tourSchema.virtual('descShort').get(function() {
 //   if (this.description) {
@@ -49,6 +123,11 @@ tourSchema.virtual('reviews', {
 //   }
 //   return '';
 // });
+
+/*===============================*/
+/* EXAMPLE PRE & POST SAVE HOOKS */
+/*===============================*/
+
 // // EXAMPLE PRE SAVE HOOK - UNCOMMENT AND DO STUFF WITH IT IF NEEDED
 // tourSchema.pre('save', function(next) {
 //   console.log('Will save document...');
@@ -60,13 +139,10 @@ tourSchema.virtual('reviews', {
 //   next();
 // });
 
-// DOCUMENT MIDDLEWARE: runs before the .save() command and the .create() command but not when using .insertMany()
-tourSchema.pre('save', function(next) {
-  this.slug = slugify(this.name, { lower: true });
-  next();
-});
+/*=====================================*/
+/* POPULATE GUIDES IN TOURS - PRE SAVE */
+/*=====================================*/
 
-/* EMBEDDING TOUR GUIDES */
 // // Find each user by id in guides array and reassign the guides array with array of actual User objects
 // tourSchema.pre('save', async function(next) {
 //   const guidesPromises = this.guides.map(async id => await User.findById(id));
@@ -74,65 +150,6 @@ tourSchema.pre('save', function(next) {
 //   next();
 // });
 
-// QUERY MIDDLEWARE
-// Pre-query hook for any query that starts with word "find", e.g.: find(), findOne(), findMany() etc...
-tourSchema.pre(/^find/, function(next) {
-  this.find({ secretTour: { $ne: true } });
-
-  this.start = Date.now();
-  next();
-});
-
-tourSchema.pre(/^find/, function(next) {
-  this.populate({
-    path: 'guides',
-    select: '-__v -passwordChangedAt'
-  });
-  next();
-});
-
-tourSchema.post(/^find/, function(docs, next) {
-  next();
-});
-
-// AGGREGATION MIDDLEWARE
-tourSchema.pre('aggregate', function(next) {
-  this.pipeline().unshift({ $match: { secretTour: { $ne: true } } });
-  next();
-});
-
 const Tour = mongoose.model('Tour', tourSchema);
 
 module.exports = Tour;
-
-// Returns a user friendly string, days/hours/minutes from now
-function fromNow(time) {
-  const currentTime = Date.now();
-  const timeToMili = new Date(time).getTime();
-  const miliFromNow = currentTime - timeToMili;
-  const inDays = Math.floor(miliFromNow / 86400000);
-  const inHours = Math.floor(miliFromNow / 3600000);
-  const inMinutes = Math.floor(miliFromNow / 60000);
-  const inhoursRemaining = inHours - inDays * 24;
-  const inMinRemaining = inMinutes - inhoursRemaining * 60;
-  const printDays =
-    inDays === 0
-      ? ''
-      : `${inDays} day${inDays === 1 ? '' : 's'} ${
-          inHours !== 0 || inMinutes !== 0 ? 'and ' : ''
-        }`;
-  const printHours =
-    inhoursRemaining === 0
-      ? ''
-      : `${inhoursRemaining} hour${inhoursRemaining === 1 ? '' : 's'} ${
-          inMinutes !== 0 ? 'and ' : ''
-        }`;
-  const printMinutes =
-    inMinRemaining === 0
-      ? ''
-      : `${inMinRemaining} minute${inMinRemaining === 1 ? '' : 's'} `;
-
-  return `${printDays}${printHours}${printMinutes}${
-    miliFromNow < 60000 ? 'Just now' : 'ago'
-  }`;
-}
