@@ -24,35 +24,58 @@ const handleValidationErrorDB = err => {
 };
 
 // Error response when in development
-const sendErrorDev = (err, res) => {
-  res.status(err.statusCode).json({
-    status: err.status,
-    error: err,
-    message: err.message,
-    stack: err.stack,
-    errorCode: err.errorCode
+const sendErrorDev = (err, req, res) => {
+  // a) API
+  if (req.originalUrl.startsWith('/api')) {
+    return res.status(err.statusCode).json({
+      status: err.status,
+      error: err,
+      message: err.message,
+      stack: err.stack,
+      errorCode: err.errorCode
+    });
+  }
+  // b) RENDERED WEBSITE
+  return res.status(err.statusCode).render('error', {
+    title: 'Something went wrong.',
+    msg: err.message
   });
 };
 
 // Error response when in production
-const sendErrorProd = (err, res) => {
-  // Operational, trusted error: send message to client
-  if (err.isOperational) {
-    res.status(err.statusCode).json({
-      status: err.status,
-      message: err.message,
-      errorCode: err.errorCode
-    });
-
-    // Programming or other unknown error: don't leak details to client
-  } else {    
+const sendErrorProd = (err, req, res) => {
+  // a) API
+  if (req.originalUrl.startsWith('/api')) {
+    // Operational, trusted error: send message to client
+    if (err.isOperational) {
+      return res.status(err.statusCode).json({
+        status: err.status,
+        message: err.message,
+        errorCode: err.errorCode
+      });
+      // Programming or other unknown error: don't leak details to client
+    }
     // Send genetic message
-    res.status(500).json({
+    return res.status(500).json({
       status: 'error',
       message: 'Something went wrong.',
       errorCode: err.errorCode
     });
   }
+  // b) RENDERED WEBSITE
+  // Operational, trusted error: send message to client
+  if (err.isOperational) {
+    return res.status(err.statusCode).render('error', {
+      title: 'Something went wrong.',
+      msg: err.message
+    });
+    // Programming or other unknown error: don't leak details to client
+  }
+  // Send genetic message
+  return res.status(err.statusCode).render('error', {
+    title: 'Something went wrong.',
+    msg: 'Please, try again later.'
+  });
 };
 
 module.exports = (err, req, res, next) => {
@@ -62,9 +85,11 @@ module.exports = (err, req, res, next) => {
   err.status = err.status || 'error';
 
   if (process.env.NODE_ENV === 'development') {
-    sendErrorDev(err, res);
+    sendErrorDev(err, req, res);
   } else if (process.env.NODE_ENV === 'production') {
     let error = { ...err };
+
+    error.message = `${err.message}`;
     // Provide custom error messages for different types of errors that go into prod
     if (error.name === 'CastError') error = handleCastErrorDB(error);
     if (error.code === 11000) error = handleDuplicateFieldsDB(error);
@@ -73,7 +98,7 @@ module.exports = (err, req, res, next) => {
     if (error.name === 'ValidationError')
       error = handleValidationErrorDB(error);
 
-    sendErrorProd(error, res, err);
+    sendErrorProd(error, req, res);
   }
 };
 

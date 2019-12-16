@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
@@ -5,6 +6,7 @@ const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
+const cookieParser = require('cookie-parser');
 
 const {
   toMilliseconds,
@@ -16,14 +18,25 @@ const globalErrorHandler = require('./controllers/errorController');
 const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
+const viewsRouter = require('./routes/viewRoutes');
 const tourShape = require('./models/shapes/tourShape');
 // const Configs = require('./models/configsModel');
 
 const app = express();
 
+// Set up Pug views engine 🐶
+app.set('view engine', 'pug');
+
+// Point views to views folder
+app.set('views', path.join(__dirname, 'views'));
+
+// Serving static files in /public folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 /*===================*/
 /* GLOBAL MIDDLEWARE */
 /*===================*/
+
 // Set security HTTP headers
 app.use(helmet());
 
@@ -44,6 +57,11 @@ app.use('/api', limiter);
 // If data is more that the set limit, it will not be accepted
 app.use(express.json({ limit: '10kb' }));
 
+app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+
+// Parse data from cookies 🍪
+app.use(cookieParser());
+
 // Data sanitization agains NoSQL query injection
 app.use(mongoSanitize({}, onMaliciousActivity));
 
@@ -56,9 +74,6 @@ app.use(xss());
 // For example, this will return results with duration of 5 and 9 because duration is whitelisted ...?duration=5&duration=9
 // Without whitelisting 'duration', the result will only be the last duration - 9
 app.use(hpp({ whitelist: Object.keys(tourShape) }));
-
-// Serving static files in /public folder
-app.use(express.static(`${__dirname}/public`));
 
 // Testing middleware. You can access and examine request.
 app.use((req, res, next) => {
@@ -82,6 +97,11 @@ app.use(blockBlacklistedIps);
 /*========*/
 /* ROUTES */
 /*========*/
+
+// Templates Routes
+app.use('/', viewsRouter);
+
+// API Routes
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
@@ -95,6 +115,7 @@ app.all('*', (req, res, next) => {
 /*================*/
 /* ERROR HANDLERS */
 /*================*/
+
 // If there are any errors, run them through error handlers in errorControllers.js
 app.use(globalErrorHandler);
 

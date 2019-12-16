@@ -1,5 +1,3 @@
-const { promisify } = require('util');
-const jwt = require('jsonwebtoken');
 const User = require('../../models/userModel');
 const { AppError, catchAsync } = require('../../utils');
 const createSendToken = require('./createSendToken');

@@ -1,1 +1,0 @@
-{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"natours-test.tours"}],"uuid":"7d601a5967aa41518a1da048d8a28ea4"}

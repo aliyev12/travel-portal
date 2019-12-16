@@ -6,6 +6,8 @@ const forgotPassword = require('./forgotPassword');
 const resetPassword = require('./resetPassword');
 const updatePassword = require('./updatePassword');
 const createSendToken = require('./createSendToken');
+const isLoggedIn = require('./isLoggedIn');
+const logout = require('./logout');
 
 module.exports = {
   login,
@@ -15,5 +17,7 @@ module.exports = {
   forgotPassword,
   resetPassword,
   updatePassword,
-  createSendToken
+  createSendToken,
+  isLoggedIn,
+  logout
 };

@@ -52,7 +52,16 @@ const tourShape = {
     default: Date.now()
     // select: false
   },
-  startDates: [Date],
+  startDates: {
+    type: [Date],
+    required: true,
+    validate: {
+      validator: function(array) {
+        return array.length > 0;
+      },
+      message: `Tour must have at least one start date.`
+    }
+  },
   secretTour: {
     type: Boolean,
     default: false

@@ -60,6 +60,16 @@ const fromNow = time => {
   }`;
 };
 
+const getDomain = () => {
+  let domain = '';
+  if (process.env.NODE_ENV === 'development') {
+    domain = process.env.LOCAL_DOMAIN;
+  } else if (process.env.NODE_ENV === 'production') {
+    domain = process.env.PROD_DOMAIN;
+  }
+  return domain;
+}
+
 module.exports = {
   APIFeatures,
   AppError,
@@ -72,5 +82,6 @@ module.exports = {
   blockBlacklistedIps,
   Ref,
   filterObj,
-  fromNow
+  fromNow,
+  getDomain
 };

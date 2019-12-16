@@ -31,13 +31,6 @@ const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours.json`, 'utf-8'));
 const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
 const reviews = JSON.parse(fs.readFileSync(`${__dirname}/reviews.json`, 'utf-8'));
 
-const toursWithGuide = tours.map(t => {
-  return {
-    ...t,
-    guides: ['5dd72e6110569e1692a4d610']
-  };
-});
-
 // IMPORT DATA INTO DB
 const importData = async () => {
   try {
@@ -66,7 +59,7 @@ const deleteAndImportData = async () => {
     await Tour.deleteMany();
     console.log('All tours deleted.');
     console.log('Uploading starter tours...');
-    await Tour.create(toursWithGuide);
+    await Tour.create(tours);
     console.log('Starter tours uploaded.');
 
     /*
