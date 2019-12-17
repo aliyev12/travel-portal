@@ -13,7 +13,8 @@ const userShape = {
     validate: [validator.isEmail, 'Please, provide a valid email address.']
   },
   photo: {
-    type: String
+    type: String,
+    default: 'default.jpg'
   },
   role: {
     type: String,
