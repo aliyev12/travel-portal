@@ -4,6 +4,24 @@ const User = require('../models/userModel');
 const { catchAsync, AppError, filterObj } = require('./../utils');
 const factory = require('./handlerFactory');
 
+// Do NOT update password with updateUser!
+exports.updateUser = factory.updateOne({ User });
+exports.deleteUser = factory.deleteOne({ User });
+exports.getUser = factory.getOne({ User });
+
+exports.getAllUsers = catchAsync(async (req, res, next) => {
+  const users = await User.find();
+  res.status(200).json({
+    status: 'success',
+    results: users ? users.length : 0,
+    data: { users }
+  });
+});
+
+/*==============*/
+/* MULTER SETUP */
+/*==============*/
+
 // /* This will store image to disk */
 // const multerStorage = multer.diskStorage({
 //   destination: (req, file, cb) => {
@@ -30,24 +48,6 @@ const upload = multer({
   storage: multerStorage,
   fileFilter: multerFilter
 });
-
-// Do NOT update password with updateUser!
-exports.updateUser = factory.updateOne({ User });
-exports.deleteUser = factory.deleteOne({ User });
-exports.getUser = factory.getOne({ User });
-
-exports.getAllUsers = catchAsync(async (req, res, next) => {
-  const users = await User.find();
-  res.status(200).json({
-    status: 'success',
-    results: users ? users.length : 0,
-    data: { users }
-  });
-});
-
-/*========*/
-/* MULTER */
-/*========*/
 
 // Uploading
 exports.uploadUserPhoto = upload.single('photo');
@@ -78,8 +78,6 @@ exports.getMe = (req, res, next) => {
 /* UPDATE ME */
 /*===========*/
 exports.updateMe = catchAsync(async (req, res, next) => {
-  console.log('req.file = ', req.file);
-  console.log('req.body = ', req.body);
   // 1) Create error if user POSTs password data
   if (req.body.password || req.body.passwordConfirm) {
     return next(

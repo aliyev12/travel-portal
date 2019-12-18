@@ -78,7 +78,6 @@ app.use(hpp({ whitelist: Object.keys(tourShape) }));
 // Testing middleware. You can access and examine request.
 app.use((req, res, next) => {
   // Add time of request to req object (request)
-  console.log('cookies from app.js= ', req.cookies);
   req.requestTime = new Date().toISOString();
   next();
 });

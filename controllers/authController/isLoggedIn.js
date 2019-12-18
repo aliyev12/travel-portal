@@ -5,12 +5,9 @@ const { catchAsync } = require('../../utils');
 
 // Only for rendered pages, no errors!
 const isLoggedIn = async (req, res, next) => {
-  console.log('in isLoggedIn')
   const x = JSON.stringify(req.cookies);
-  console.log('x = ', x)
   // 1) Getting token and check if it's there
   if (req.cookies && req.cookies.jwt) {
-    console.log('line 11')
     try {
       const token = req.cookies.jwt;
 
