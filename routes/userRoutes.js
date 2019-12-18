@@ -14,7 +14,12 @@ router.patch('/resetPassword/:token', authController.resetPassword);
 router.use(authController.protectRoute);
 router.patch('/updateMyPassword', authController.updatePassword);
 router.get('/me', userController.getMe, userController.getUser);
-router.patch('/updateMe', userController.uploadUserPhoto,  userController.updateMe);
+router.patch(
+  '/updateMe',
+  userController.uploadUserPhoto,
+  userController.resizeUserPhoto,
+  userController.updateMe
+);
 router.patch('/deleteMe', userController.deleteMe);
 
 // ⬇⬇⬇ This will restrict all the routes below to admin only! ⬇⬇⬇

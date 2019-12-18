@@ -5,7 +5,9 @@ const authController = require('../controllers/authController');
 const router = express.Router();
 
 router.get('/', authController.isLoggedIn, viewsController.getOverview);
-router.get('/login', authController.isLoggedIn, viewsController.getLoginForm);
+router.get('/login', 
+// authController.isLoggedIn, 
+viewsController.getLoginForm);
 router.get('/me', authController.protectRoute, viewsController.getAccount);
 router.get('/tour/:slug', authController.isLoggedIn, viewsController.getTour);
 router.post('/submit-user-data', authController.protectRoute, viewsController.updateUserData);
