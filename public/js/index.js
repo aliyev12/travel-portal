@@ -9,7 +9,7 @@ import { updateSettings } from './updateSettings';
 // DOM ELEMENTS
 const mapEl = document.getElementById('map');
 const domainEl = document.getElementById('domain');
-const form = document.querySelector('.form--login');
+const loginForm = document.querySelector('.form--login');
 const userDataForm = document.querySelector('.form-user-data');
 const userPasswordForm = document.querySelector('.form-user-password');
 const logOutBtn = document.querySelector('.nav__el--logout');
@@ -22,7 +22,7 @@ if (mapEl) {
   displayMap(locations);
 }
 
-if (form && domain) form.addEventListener('submit', onSubmit);
+if (loginForm && domain) loginForm.addEventListener('submit', onSubmit);
 
 if (userDataForm && domain)
   userDataForm.addEventListener('submit', onSubmitUserData);
@@ -43,9 +43,16 @@ function onSubmitUserData(e) {
   e.preventDefault();
   document.querySelector('.btn--save-user-data').textContent =
     'Saving settings...';
+  const form = new FormData();
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
-  updateSettings({ name, email }, 'name and email');
+  const photo = document.getElementById('photo').files[0];
+
+  form.append('name', name);
+  form.append('email', email);
+  form.append('photo', photo);
+
+  updateSettings(form, 'name, email, and photo');
   document.querySelector('.btn--save-user-data').textContent = 'Save settings';
 }
 

@@ -8833,7 +8833,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // DOM ELEMENTS
 var mapEl = document.getElementById('map');
 var domainEl = document.getElementById('domain');
-var form = document.querySelector('.form--login');
+var loginForm = document.querySelector('.form--login');
 var userDataForm = document.querySelector('.form-user-data');
 var userPasswordForm = document.querySelector('.form-user-password');
 var logOutBtn = document.querySelector('.nav__el--logout');
@@ -8846,7 +8846,7 @@ if (mapEl) {
   (0, _mapbox.displayMap)(locations);
 }
 
-if (form && domain) form.addEventListener('submit', onSubmit);
+if (loginForm && domain) loginForm.addEventListener('submit', onSubmit);
 if (userDataForm && domain) userDataForm.addEventListener('submit', onSubmitUserData);
 if (userPasswordForm && domain) userPasswordForm.addEventListener('submit', onSubmitUserPassword);
 if (logOutBtn) logOutBtn.addEventListener('click', _logout.logout);
@@ -8861,12 +8861,14 @@ function onSubmit(e) {
 function onSubmitUserData(e) {
   e.preventDefault();
   document.querySelector('.btn--save-user-data').textContent = 'Saving settings...';
+  var form = new FormData();
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
-  (0, _updateSettings.updateSettings)({
-    name: name,
-    email: email
-  }, 'name and email');
+  var photo = document.getElementById('photo').files[0];
+  form.append('name', name);
+  form.append('email', email);
+  form.append('photo', photo);
+  (0, _updateSettings.updateSettings)(form, 'name, email, and photo');
   document.querySelector('.btn--save-user-data').textContent = 'Save settings';
 }
 
@@ -8952,7 +8954,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60256" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62698" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
