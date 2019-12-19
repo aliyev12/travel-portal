@@ -5664,3 +5664,155 @@ Error: You are not logged in. Please, login to get access.
     at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10)
     at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:635:15
     at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:165:47 
+2019-12-18 20:07:35.433 ERROR Cat't find /tour/img/favicon.png on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /tour/img/favicon.png on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:111:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-18 20:28:18.262 ERROR Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857628-image-1.jpeg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857628-image-1.jpeg on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:111:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-18 20:28:18.300 ERROR Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857629-image-2.jpeg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857629-image-2.jpeg on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:111:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-18 20:28:18.330 ERROR Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857629-image-3.jpeg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857629-image-3.jpeg on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:111:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-18 20:28:41.168 ERROR Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857628-image-1.jpeg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857628-image-1.jpeg on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:111:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-18 20:28:41.201 ERROR Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857629-image-2.jpeg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857629-image-2.jpeg on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:111:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-18 20:28:41.231 ERROR Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857629-image-3.jpeg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tours/tour-5c88fa8cf4afda39709c2951-1576718857629-image-3.jpeg on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:111:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-18 20:34:42.620 ERROR Cat't find /img/tours/undefined on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tours/undefined on this server.
+    at app.all (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/app.js:111:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
