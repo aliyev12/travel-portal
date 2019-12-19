@@ -17,7 +17,6 @@ module.exports = class Email {
     /*==========*/
     /* SENDGRID */
     /*==========*/
-
     if (this.service === 'sendgrid') {
       // Sendgrid
       return 1;
@@ -26,7 +25,6 @@ module.exports = class Email {
     /*=======*/
     /* GMAIL */
     /*=======*/
-
     else if (this.service === 'gmail') {
       // !!! MAKE SURE TO Activate Gmail "less secure appS" option!
       return nodemailer.createTransport({
@@ -41,7 +39,6 @@ module.exports = class Email {
     /*==========*/
     /* MAILTRAP */
     /*==========*/
-
     else if (this.service === 'mailtrap') {
       return nodemailer.createTransport({
         host: process.env.MAILTRAP_HOST,
@@ -56,7 +53,6 @@ module.exports = class Email {
     /*======================*/
     /* OTHER - UNRECOGNIZED */
     /*======================*/
-
     else {
       // If there is no EMAIL_SERVICE env variable, then throw an error
       throw new Error(
