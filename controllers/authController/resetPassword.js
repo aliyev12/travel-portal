@@ -1,8 +1,7 @@
 const crypto = require('crypto');
-const { promisify } = require('util');
 const jwt = require('jsonwebtoken');
 const User = require('../../models/userModel');
-const { AppError, catchAsync, sendEmail } = require('../../utils');
+const { AppError, catchAsync } = require('../../utils');
 const createSendToken = require('./createSendToken');
 
 const resetPassword = catchAsync(async (req, res, next) => {
@@ -29,13 +28,13 @@ const resetPassword = catchAsync(async (req, res, next) => {
 
   // 3) Log the user in, send JWT to client
   createSendToken(user, 200, res);
-  // const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
-  //   expiresIn: process.env.JWT_EXPIRES_IN
-  // });
-  // res.status(200).json({
-  //   status: 'success',
-  //   token
-  // });
+  const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN
+  });
+  res.status(200).json({
+    status: 'success',
+    token
+  });
 });
 
 module.exports = resetPassword;

@@ -1,3 +1,4 @@
+/* eslint-disable */
 const nodemailer = require('nodemailer');
 const pug = require('pug');
 const htmlToText = require('html-to-text');
@@ -88,6 +89,10 @@ module.exports = class Email {
 
   async sendWelcome() {
     await this.send('welcome', 'Welcome to the Natours Family!');
+  }
+
+  async sendPasswordReset() {
+    await this.send('passwordReset', 'Your password reset token (valid for only 10 minutes!)');
   }
 };
 

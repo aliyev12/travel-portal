@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const APIFeatures = require('./apiFeatures');
 const AppError = require('./AppError');
 const catchAsync = require('./catchAsync');
-const sendEmail = require('./sendEmail');
+const Email = require('./Email');
 const logError = require('./logError');
 const toMilliseconds = require('./toMilliseconds');
 const onMaliciousActivity = require('./onMaliciousActivity');
@@ -74,10 +74,9 @@ module.exports = {
   APIFeatures,
   AppError,
   catchAsync,
-  sendEmail,
+  Email,
   toMilliseconds,
   logError,
-  toMilliseconds,
   onMaliciousActivity,
   blockBlacklistedIps,
   Ref,

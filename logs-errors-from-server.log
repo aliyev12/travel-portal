@@ -5816,3 +5816,103 @@ Error: Cat't find /img/tours/undefined on this server.
     at param (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:365:14)
     at Function.process_params (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:410:3)
     at next (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/router/index.js:275:10) 
+2019-12-24 08:44:04.211 ERROR /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/../views/emails/welcome.pug:4:1
+
+Only named blocks and mixins can appear at the top level of an extending template
+{"code":"PUG:UNEXPECTED_NODES_IN_EXTENDING_ROOT","msg":"Only named blocks and mixins can appear at the top level of an extending template","line":4,"column":1,"filename":"/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/../views/emails/welcome.pug"}
+Error: /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/../views/emails/welcome.pug:4:1
+
+Only named blocks and mixins can appear at the top level of an extending template
+    at makeError (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-error/index.js:32:13)
+    at error (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-linker/index.js:7:30)
+    at addNode (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-linker/index.js:34:9)
+    at Array.forEach (<anonymous>)
+    at link (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-linker/index.js:26:15)
+    at compileBody (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug/lib/index.js:170:9)
+    at Object.exports.compile (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug/lib/index.js:242:16)
+    at handleTemplateCache (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug/lib/index.js:215:25)
+    at Object.exports.renderFile (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug/lib/index.js:427:10)
+    at Email.send (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/Email.js:68:22)
+    at Email.sendWelcome (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/Email.js:91:16)
+    at catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/authController/signup.js:18:33)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2019-12-24 08:45:32.071 ERROR E11000 duplicate key error collection: natours.users index: email_1 dup key: { email: "john.doe@example.com" }
+{"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"email":1},"keyValue":{"email":"john.doe@example.com"},"errmsg":"E11000 duplicate key error collection: natours.users index: email_1 dup key: { email: \"john.doe@example.com\" }","statusCode":500,"status":"error"}
+MongoError: E11000 duplicate key error collection: natours.users index: email_1 dup key: { email: "john.doe@example.com" }
+    at Function.create (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/error.js:44:12)
+    at toError (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/utils.js:150:22)
+    at coll.s.topology.insert (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/operations/common_functions.js:266:39)
+    at handler (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/topology.js:1000:24)
+    at wireProtocol.(anonymous function) (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/server.js:457:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/connection/pool.js:408:18
+    at process._tickCallback (internal/process/next_tick.js:61:11) 
+2019-12-24 08:46:26.820 ERROR E11000 duplicate key error collection: natours.users index: email_1 dup key: { email: "john.doe@example.com" }
+{"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"email":1},"keyValue":{"email":"john.doe@example.com"},"errmsg":"E11000 duplicate key error collection: natours.users index: email_1 dup key: { email: \"john.doe@example.com\" }","statusCode":500,"status":"error"}
+MongoError: E11000 duplicate key error collection: natours.users index: email_1 dup key: { email: "john.doe@example.com" }
+    at Function.create (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/error.js:44:12)
+    at toError (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/utils.js:150:22)
+    at coll.s.topology.insert (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/operations/common_functions.js:266:39)
+    at handler (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/topology.js:1000:24)
+    at wireProtocol.(anonymous function) (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/sdam/server.js:457:5)
+    at /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/mongodb/lib/core/connection/pool.js:408:18
+    at process._tickCallback (internal/process/next_tick.js:61:11) 
+2019-12-24 09:41:31.681 ERROR There is no user with email address.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"FP-01"}
+Error: There is no user with email address.
+    at catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/authController/forgotPassword.js:10:7)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2019-12-24 09:44:02.984 ERROR /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/../views/emails/passwordReset.pug:6:12
+    4|   p Hi #{firstName},
+    5|     p To reset your password, follow this URL or click the "Reset your password" button below: 
+  > 6|     a(href=#{url}) #{url}
+------------------^
+    7|     p (Website for this action not yet implemented.)
+    8|     table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    9|       tbody
+
+Syntax Error: Unexpected character '#'
+{"code":"PUG:SYNTAX_ERROR","msg":"Syntax Error: Unexpected character '#'","line":6,"column":12,"filename":"/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/../views/emails/passwordReset.pug"}
+Error: /Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/utils/../views/emails/passwordReset.pug:6:12
+    4|   p Hi #{firstName},
+    5|     p To reset your password, follow this URL or click the "Reset your password" button below: 
+  > 6|     a(href=#{url}) #{url}
+------------------^
+    7|     p (Website for this action not yet implemented.)
+    8|     table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    9|       tbody
+
+Syntax Error: Unexpected character '#'
+    at makeError (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-error/index.js:32:13)
+    at Lexer.error (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:59:15)
+    at Lexer.assertExpression (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:87:12)
+    at Lexer.attributeValue (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:1257:10)
+    at Lexer.attribute (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:1114:30)
+    at Lexer.attrs (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:1283:20)
+    at Lexer.callLexerFunction (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:1460:23)
+    at Lexer.advance (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:1497:15)
+    at Lexer.callLexerFunction (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:1460:23)
+    at Lexer.getTokens (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:1516:12)
+    at lex (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-lexer/index.js:12:42)
+    at Object.lex (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug/lib/index.js:100:27)
+    at Function.loadString [as string] (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug-load/index.js:44:24)
+    at compileBody (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug/lib/index.js:86:18)
+    at Object.exports.compile (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug/lib/index.js:242:16)
+    at handleTemplateCache (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/pug/lib/index.js:215:25) 
+2019-12-24 09:44:02.987 ERROR There was an error sending the email. Try again later.
+{"statusCode":500,"status":"error","isOperational":true,"errorCode":"FP-02"}
+Error: There was an error sending the email. Try again later.
+    at catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/authController/forgotPassword.js:41:7)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2019-12-24 10:24:51.387 ERROR Cannot set headers after they are sent to the client
+{"statusCode":500,"status":"error"}
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/node_modules/express/lib/response.js:267:15)
+    at catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/authController/resetPassword.js:34:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2019-12-24 10:25:37.054 ERROR Incorrect email or password
+{"statusCode":401,"status":"fail","isOperational":true,"errorCode":"0000"}
+Error: Incorrect email or password
+    at catchAsync (/Users/abdulaliyev/tut/node/jonas/complete-node-bootcamp/4-natours/starter/controllers/authController/login.js:18:17) 
