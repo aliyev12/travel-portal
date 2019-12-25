@@ -7,6 +7,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 
 const {
   toMilliseconds,
@@ -74,6 +75,9 @@ app.use(xss());
 // For example, this will return results with duration of 5 and 9 because duration is whitelisted ...?duration=5&duration=9
 // Without whitelisting 'duration', the result will only be the last duration - 9
 app.use(hpp({ whitelist: Object.keys(tourShape) }));
+
+// Compress all text that is sent to client
+app.use(compression());
 
 // Testing middleware. You can access and examine request.
 app.use((req, res, next) => {
