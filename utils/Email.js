@@ -8,7 +8,7 @@ module.exports = class Email {
     this.to = user.email;
     this.firstName = user.name.split(' ')[0];
     this.url = url;
-    this.from = `Natours <${process.env.EMAIL_FROM}>`;
+    this.from = `Travel Portal <${process.env.EMAIL_FROM}>`;
     this.service = service;
   }
 
@@ -94,7 +94,7 @@ module.exports = class Email {
   }
 
   async sendWelcome() {
-    await this.send('welcome', 'Welcome to the Natours Family!');
+    await this.send('welcome', 'Welcome to the Travel Portal Family!');
   }
 
   async sendPasswordReset() {
