@@ -1,12 +1,13 @@
+/* eslint-ignore */
 import axios from 'axios';
 import { showAlert } from './alerts';
-import { domain, sendClientError } from './index';
+import { sendClientError } from './index';
 
 export async function login(email, password) {
   try {
     const res = await axios({
       method: 'POST',
-      url: `${domain}/api/v1/users/login`,
+      url: `/api/v1/users/login`,
       data: { email, password }
     });
 
@@ -21,4 +22,3 @@ export async function login(email, password) {
     sendClientError(error);
   }
 }
-
