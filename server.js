@@ -66,17 +66,18 @@ mongoose
 // Start server
 const port = process.env.PORT || 8080;
 const server = app.listen(port, async () => {
-    const configs = await Configs.find();
-    await app.set('configs', configs);
-    if (configs) console.log(
+  const configs = await Configs.find();
+  await app.set('configs', configs);
+  if (configs)
+    console.log(
       '\x1b[46m\x1b[37m\x1b[1m%s\x1b[0m',
       ` Configs loaded from DB    `
     );
-    console.log(
-      '\x1b[45m\x1b[33m\x1b[1m%s\x1b[0m',
-      ` App running on port ${port}  `
-    );
-    console.log('');
+  console.log(
+    '\x1b[45m\x1b[33m\x1b[1m%s\x1b[0m',
+    ` App running on port ${port}  `
+  );
+  console.log('');
 });
 
 /* ERROR EVENT LISTENERS HAVE TO BE AT THE BOTTOM OF THE FILE! */
