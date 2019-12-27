@@ -5,6 +5,7 @@ import { sendClientError } from './index';
 
 export async function login(email, password) {
   try {
+    console.log('inside login function...');
     const res = await axios({
       method: 'POST',
       url: `/api/v1/users/login`,

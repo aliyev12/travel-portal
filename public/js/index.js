@@ -13,7 +13,7 @@ const loginForm = document.querySelector('.form--login');
 const userDataForm = document.querySelector('.form-user-data');
 const userPasswordForm = document.querySelector('.form-user-password');
 const logOutBtn = document.querySelector('.nav__el--logout');
-
+console.log('inside index line 16');
 let domain = '';
 if (domainEl) domain = domainEl.dataset.domain;
 
@@ -22,7 +22,7 @@ if (mapEl) {
   displayMap(locations);
 }
 
-if (loginForm && domain) loginForm.addEventListener('submit', onSubmit);
+if (loginForm) loginForm.addEventListener('submit', onSubmit);
 
 if (userDataForm && domain)
   userDataForm.addEventListener('submit', onSubmitUserData);
@@ -34,6 +34,7 @@ if (logOutBtn) logOutBtn.addEventListener('click', logout);
 
 function onSubmit(e) {
   e.preventDefault();
+  console.log('inside onSubmit line 37');
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
   login(email, password);
