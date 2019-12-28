@@ -13,7 +13,7 @@ const loginForm = document.querySelector('.form--login');
 const userDataForm = document.querySelector('.form-user-data');
 const userPasswordForm = document.querySelector('.form-user-password');
 const logOutBtn = document.querySelector('.nav__el--logout');
-console.log('inside index line 16');
+
 let domain = '';
 if (domainEl) domain = domainEl.dataset.domain;
 
@@ -24,17 +24,16 @@ if (mapEl) {
 
 if (loginForm) loginForm.addEventListener('submit', onSubmit);
 
-if (userDataForm && domain)
+if (userDataForm)
   userDataForm.addEventListener('submit', onSubmitUserData);
 
-if (userPasswordForm && domain)
+if (userPasswordForm)
   userPasswordForm.addEventListener('submit', onSubmitUserPassword);
 
 if (logOutBtn) logOutBtn.addEventListener('click', logout);
 
 function onSubmit(e) {
   e.preventDefault();
-  console.log('inside onSubmit line 37');
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
   login(email, password);
@@ -79,7 +78,7 @@ async function onSubmitUserPassword(e) {
 async function sendClientError() {
   await axios({
     method: 'POST',
-    url: `${domain}/error`,
+    url: `/error`,
     data: { error }
   });
 }

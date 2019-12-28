@@ -35,7 +35,7 @@ const updatePassword = catchAsync(async (req, res, next) => {
   await user.save();
 
   // 5) Log user in, send JWT
-  createSendToken(user, 200, res);
+  createSendToken(user, 200, req, res);
 });
 
 module.exports = updatePassword;

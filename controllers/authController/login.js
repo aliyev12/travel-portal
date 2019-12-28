@@ -19,7 +19,7 @@ const login = catchAsync(async (req, res, next) => {
   }
 
   // 3) If everything is ok, send token to client
-  createSendToken(user, 200, res);
+  createSendToken(user, 200, req, res);
 
   // const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
   //   expiresIn: process.env.JWT_EXPIRES_IN

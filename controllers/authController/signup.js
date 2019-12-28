@@ -20,7 +20,7 @@ const signup = catchAsync(async (req, res, next) => {
   await new Email(newUser, url).sendWelcome();
 
   // Send cookie to user client side to authenticate user automatically
-  createSendToken(newUser, 201, res);
+  createSendToken(newUser, 201, req, res);
 });
 
 module.exports = signup;

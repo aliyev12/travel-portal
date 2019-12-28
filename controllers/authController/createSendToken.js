@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const { toMilliseconds } = require('../../utils');
 
-const createSendToken = (user, statusCode, res) => {
+const createSendToken = (user, statusCode, req, res) => {
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES_IN
   });
@@ -10,13 +10,12 @@ const createSendToken = (user, statusCode, res) => {
     expires: new Date(
       Date.now() + toMilliseconds(`${process.env.JWT_COOKIE_EXPIRES_IN} days`)
     ),
-    httpOnly: true // limit browsers only to be able to read cookie
+    httpOnly: true, // limit browsers only to be able to read cookie
+    // If connection is secure, express will automatically attach .secure to request
+    // But in heroku this won't work, but heroku will set x-forwarded-proto to "https"
+    // if connection is secure
+    secure: req.secure || req.headers('x-forwarded-proto') === 'https'
   };
-
-  // Only in production require https
-  if (process.env.NODE_ENV === 'production') {
-    cookieOptions.secure = true;
-  }
 
   res.cookie('jwt', token, cookieOptions);
 

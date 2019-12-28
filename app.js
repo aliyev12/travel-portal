@@ -25,6 +25,9 @@ const tourShape = require('./models/shapes/tourShape');
 
 const app = express();
 
+// Trust proxies (this is how horoku and some other servers do stuff)
+app.enable('trust proxy');
+
 // Set up Pug views engine 🐶
 app.set('view engine', 'pug');
 
