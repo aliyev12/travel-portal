@@ -8,6 +8,7 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
+const cors = require('cors');
 
 const {
   toMilliseconds,
@@ -34,12 +35,28 @@ app.set('view engine', 'pug');
 // Point views to views folder
 app.set('views', path.join(__dirname, 'views'));
 
-// Serving static files in /public folder
-app.use(express.static(path.join(__dirname, 'public')));
-
 /*===================*/
 /* GLOBAL MIDDLEWARE */
 /*===================*/
+
+// !!! CORS for simple requests only! for GET and POST !!!
+// Implement CORS to allow everyone to send requests to your server
+app.use(cors());
+/* If you instead only want a particular endpoint send request to your server,
+You can set up CORS in the following way: */
+// app.use(cors({
+//   origin: 'https://www.yourtravelportal.com'
+// }));
+
+// !!! CORS for none-simple (DELETE, PUT etc..) requests !!!
+/* When a none-simple request is send, user agent first sends a "pre-flight phase"
+which is an OPTIONS request to your server.
+So, in order for CORS to work in those cases, you need to handle OPTIONS
+request and send the "Access-Control-Allow-Origin headers back:" */
+app.options('*', cors());
+
+// Serving static files in /public folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Set security HTTP headers
 app.use(helmet());
