@@ -15,23 +15,23 @@ exports.updateBooking = factory.updateOne({ Booking });
 exports.deleteBooking = factory.deleteOne({ Booking });
 
 exports.getCheckoutSession = catchAsync(async (req, res, next) => {
+  const baseUrl = `${req.protocol}://${req.get('host')}`;
+
   // 1) Get the currently booked tour
   const tour = await Tour.findById(req.params.tourId);
 
   // 2) Create checkout session
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
-    success_url: `${req.protocol}://${req.get('host')}/my-tours`,
-    cancel_url: `${req.protocol}://${req.get('host')}/tour/${tour.slug}`,
+    success_url: `${baseUrl}/my-tours`,
+    cancel_url: `${baseUrl}/tour/${tour.slug}`,
     customer_email: req.user.email,
     client_reference_id: req.params.tourId,
     line_items: [
       {
         name: `${tour.name} Tour`,
         description: tour.summary,
-        images: [
-          `https://yourtravelportal.herokuapp.com/img/tours/${tour.imageCover}`
-        ],
+        images: [`${baseUrl}/img/tours/${tour.imageCover}`],
         amount: tour.price * 100,
         currency: 'usd',
         quantity: 1
@@ -48,7 +48,7 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
 
 // Create a new booking using the data that gets back from stripe
 const createBookingCheckout = async session => {
-  // client_reference_id, customer_email, display_items are specified above in session under getCheckoutSession middleware ⬆
+  // client_reference_id, customer_email, display_items (same as line_items) are specified above in session under getCheckoutSession middleware ⬆
   if (
     (session.client_reference_id &&
       session.customer_email &&
