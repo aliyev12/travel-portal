@@ -4,6 +4,7 @@ import '@babel/polyfill';
 import { login } from './login';
 import { logout } from './logout';
 import { displayMap } from './mapbox';
+import { showAlert } from './alerts';
 import { updateSettings } from './updateSettings';
 import { bookTour } from './stripe';
 
@@ -91,5 +92,9 @@ async function sendClientError() {
     data: { error }
   });
 }
+
+const alertMessage = document.querySelector('body').dataset.alert;
+
+if (alert) showAlert('success', alertMessage, 20);
 
 export { domain, sendClientError };
