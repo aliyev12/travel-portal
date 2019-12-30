@@ -64,7 +64,7 @@
     "debug:prod": "NODE_ENV=production ndb server.js",
     "patch-package": "patch-package",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url .",
-    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url ."
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
   },
   "devDependencies": {
     "ndb": "^1.1.5"
