@@ -48,19 +48,19 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
 
 // Create a new booking using the data that gets back from stripe
 const createBookingCheckout = async session => {
-  // client_reference_id, customer_email, line_items are specified above in session under getCheckoutSession middleware ⬆
+  // client_reference_id, customer_email, display_items are specified above in session under getCheckoutSession middleware ⬆
   if (
     (session.client_reference_id &&
       session.customer_email &&
-      session.line_items &&
-      session.line_items.length &&
-      session.line_items[0] &&
-      session.line_items[0].amount !== null) ||
-    session.line_items[0].amount !== undefined
+      session.display_items &&
+      session.display_items.length &&
+      session.display_items[0] &&
+      session.display_items[0].amount !== null) ||
+    session.display_items[0].amount !== undefined
   ) {
     const tourId = session.client_reference_id;
     const userId = (await User.findOne({ email: session.customer_email })).id;
-    const price = session.line_items[0].amount / 100;
+    const price = session.display_items[0].amount / 100;
     await Booking.create({ tour: tourId, user: userId, price });
   }
 };
