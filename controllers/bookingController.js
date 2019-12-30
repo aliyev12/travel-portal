@@ -3,9 +3,16 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './.env' });
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const Tour = require('../models/tourModel');
+const User = require('../models/userModel');
 const Booking = require('../models/bookingModel');
 const { catchAsync } = require('../utils');
 const factory = require('./handlerFactory');
+
+exports.createBooking = factory.createOne({ Booking });
+exports.getBooking = factory.getOne({ Booking });
+exports.getAllBookings = factory.getAll({ Booking });
+exports.updateBooking = factory.updateOne({ Booking });
+exports.deleteBooking = factory.deleteOne({ Booking });
 
 exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   // 1) Get the currently booked tour
@@ -14,9 +21,7 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   // 2) Create checkout session
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
-    success_url: `${req.protocol}://${req.get('host')}/?tour=${
-      req.params.tourId
-    }&user=${req.user.id}&price=${tour.price}`,
+    success_url: `${req.protocol}://${req.get('host')}/my-tours`,
     cancel_url: `${req.protocol}://${req.get('host')}/tour/${tour.slug}`,
     customer_email: req.user.email,
     client_reference_id: req.params.tourId,
@@ -41,18 +46,67 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.createBookingCheckout = catchAsync(async (req, res, next) => {
-  const { tour, user, price } = req.query;
+// Create a new booking using the data that gets back from stripe
+const createBookingCheckout = async session => {
+  // client_reference_id, customer_email, line_items are specified above in session under getCheckoutSession middleware ⬆
+  if (
+    (session.client_reference_id &&
+      session.customer_email &&
+      session.line_items &&
+      session.line_items.length &&
+      session.line_items[0] &&
+      session.line_items[0].amount !== null) ||
+    session.line_items[0].amount !== undefined
+  ) {
+    const tourId = session.client_reference_id;
+    const userId = (await User.findOne({ email: session.customer_email })).id;
+    const price = session.line_items[0].amount / 100;
+    await Booking.create({ tour: tourId, user: userId, price });
+  }
+};
 
-  if (!tour && !user && !price) return next();
+exports.webhookCheckout = (req, res, next) => {
+  const signature = req.headers['stripe-signature'];
+  let event;
 
-  await Booking.create({ tour, user, price });
+  try {
+    event = stripe.webhooks.constructEvent(
+      req.body,
+      signature,
+      process.env.STRIPE_WEBHOOK_SECRET
+    );
+  } catch (error) {
+    return res.status(400).send(`Webhook error: ${error.message}`);
+  }
 
-  res.redirect(req.originalUrl.split('?')[0]);
-});
+  if (event.type === 'checkout.session.completed') {
+    createBookingCheckout(event.data.object);
+  }
 
-exports.createBooking = factory.createOne({ Booking });
-exports.getBooking = factory.getOne({ Booking });
-exports.getAllBookings = factory.getAll({ Booking });
-exports.updateBooking = factory.updateOne({ Booking });
-exports.deleteBooking = factory.deleteOne({ Booking });
+  res.status(200).json({ received: true });
+};
+
+/* This createBookingCheckout is not needed because currently we're using stripe webhooks with above defiled webhookCheckout middleware.
+However, if not for that, we would want to use this middleware. This middleware is not 
+secure because anyone who knows the stripe success endpoint, could create a booking
+without providing a payment. If you still want to use it, then modify viewRoutes.js route to look like this:
+router.get(
+  '/',
+  bookingController.createBookingCheckout,
+  authController.isLoggedIn,
+  viewsController.getOverview
+);
+Also, to use this middleware, modify the success_url in getCheckoutSession middleware above to look like this:
+  success_url: `${req.protocol}://${req.get('host')}/my-tours/?tour=${
+    req.params.tourId
+  }&user=${req.user.id}&price=${tour.price}`,
+ */
+// exports.createBookingCheckout = catchAsync(async (req, res, next) => {
+//   const { tour, user, price } = req.query;
+
+//   if (!tour && !user && !price) return next();
+
+//   await Booking.create({ tour, user, price });
+
+//   res.redirect(req.originalUrl.split('?')[0]);
+// });

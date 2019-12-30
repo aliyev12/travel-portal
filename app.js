@@ -21,6 +21,7 @@ const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
+const bookingController = require('./controllers/bookingController');
 const viewsRouter = require('./routes/viewRoutes');
 const tourShape = require('./models/shapes/tourShape');
 
@@ -73,6 +74,19 @@ const limiter = rateLimit({
   message: 'Too many requests from this IP, please try again in an hour.'
 });
 app.use('/api', limiter);
+
+/* Endpoint for Stripe to post all data about transaction
+The reason why this route is defined here in app.js is because
+whatever data that stripe will post to this route needs to come
+in a raw format, and NOT a JSON format. The next middleware (express.json...)
+will parse bodies of HTTP requests as JSON, so this middleware route
+needs to go before express.json
+*/
+app.post(
+  '/webhook-checkout',
+  express.raw({ type: 'application/json' }),
+  bookingController.webhookCheckout
+);
 
 // Body parser - reading data from http body into req.body and limiting it
 // If data is more that the set limit, it will not be accepted
