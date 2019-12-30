@@ -29,7 +29,9 @@ mongoose
 // READ JSON FILE
 const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours.json`, 'utf-8'));
 const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
-const reviews = JSON.parse(fs.readFileSync(`${__dirname}/reviews.json`, 'utf-8'));
+const reviews = JSON.parse(
+  fs.readFileSync(`${__dirname}/reviews.json`, 'utf-8')
+);
 
 // IMPORT DATA INTO DB
 const importData = async () => {
@@ -63,17 +65,19 @@ const deleteAndImportData = async () => {
     console.log('Starter tours uploaded.');
 
     /*
-    // If you wanna reset all users, uncomment this below.
+    // If you wanna reset all users, set the UPLOAD_FAKE_USERS env var to true.
     // For this to work you also need to comment out all the
     // userSchema.pre('save') hooks in order for passwords to 
     // not be encrypted, because they already are encrypted in json file
-    console.log('Deleting all users...');
-    await User.deleteMany();
-    console.log('All users deleted.');
-    console.log('Uploading starter users...');
-    await User.create(users, { validateBeforeSave: false });
-    console.log('Starter users uploaded.');
     */
+    if (process.env.UPLOAD_FAKE_USERS) {
+      console.log('Deleting all users...');
+      await User.deleteMany();
+      console.log('All users deleted.');
+      console.log('Uploading starter users...');
+      await User.create(users, { validateBeforeSave: false });
+      console.log('Starter users uploaded.');
+    }
 
     console.log('Deleting all reviews...');
     await Review.deleteMany();

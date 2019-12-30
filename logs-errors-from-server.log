@@ -148,3 +148,514 @@ Error: Cat't find /bundle.js.map on this server.
 Error: Incorrect email or password
     at catchAsync (/Users/abdulaliyev/tut/node/travel-portal/controllers/authController/login.js:18:17)
     at process._tickCallback (internal/process/next_tick.js:68:7) 
+2019-12-28 11:31:02.762 ERROR req.headers is not a function
+{"statusCode":500,"status":"error"}
+TypeError: req.headers is not a function
+    at createSendToken (/Users/abdulaliyev/tut/node/travel-portal/controllers/authController/createSendToken.js:17:31)
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/authController/login.js:22:3 
+2019-12-28 11:54:35.300 ERROR req.headers is not a function
+{"statusCode":500,"status":"error"}
+TypeError: req.headers is not a function
+    at createSendToken (/Users/abdulaliyev/tut/node/travel-portal/controllers/authController/createSendToken.js:19:27)
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/authController/login.js:22:3 
+2019-12-28 11:55:07.578 ERROR req.headers is not a function
+{"statusCode":500,"status":"error"}
+TypeError: req.headers is not a function
+    at createSendToken (/Users/abdulaliyev/tut/node/travel-portal/controllers/authController/createSendToken.js:19:34)
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/authController/login.js:22:3 
+2019-12-28 11:56:03.257 ERROR req.headers is not a function
+{"statusCode":500,"status":"error"}
+TypeError: req.headers is not a function
+    at createSendToken (/Users/abdulaliyev/tut/node/travel-portal/controllers/authController/createSendToken.js:19:34)
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/authController/login.js:22:3 
+2019-12-28 11:56:23.699 ERROR req.headers is not a function
+{"statusCode":500,"status":"error"}
+TypeError: req.headers is not a function
+    at createSendToken (/Users/abdulaliyev/tut/node/travel-portal/controllers/authController/createSendToken.js:21:34)
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/authController/login.js:22:3 
+2019-12-28 11:56:51.191 ERROR req.headers is not a function
+{"statusCode":500,"status":"error"}
+TypeError: req.headers is not a function
+    at createSendToken (/Users/abdulaliyev/tut/node/travel-portal/controllers/authController/createSendToken.js:22:34)
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/authController/login.js:22:3 
+2019-12-28 11:57:52.571 ERROR Cat't find /api/v1/bookings/checkout-session/5c88fa8cf4afda39709c2955 on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /api/v1/bookings/checkout-session/5c88fa8cf4afda39709c2955 on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 11:58:43.274 ERROR Cannot read property 'create' of undefined
+{"statusCode":500,"status":"error"}
+TypeError: Cannot read property 'create' of undefined
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/bookingController.js:10:49
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+2019-12-28 12:02:57.564 ERROR Cannot read property 'slug' of null
+{"statusCode":500,"status":"error"}
+TypeError: Cannot read property 'slug' of null
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/bookingController.js:13:67
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+2019-12-28 12:03:45.483 ERROR Cannot read property 'slug' of null
+{"statusCode":500,"status":"error"}
+TypeError: Cannot read property 'slug' of null
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/bookingController.js:15:67
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+2019-12-28 12:04:27.985 ERROR Cannot read property 'slug' of null
+{"statusCode":500,"status":"error"}
+TypeError: Cannot read property 'slug' of null
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/bookingController.js:15:67
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+2019-12-28 12:04:54.180 ERROR Cannot read property 'slug' of null
+{"statusCode":500,"status":"error"}
+TypeError: Cannot read property 'slug' of null
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/bookingController.js:16:67
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+2019-12-28 12:38:07.503 ERROR You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.
+{"raw":{"message":"You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.","type":"invalid_request_error","headers":{"server":"nginx","date":"Sat, 28 Dec 2019 17:38:07 GMT","content-type":"application/json","content-length":"343","connection":"keep-alive","access-control-allow-credentials":"true","access-control-allow-methods":"GET, POST, HEAD, OPTIONS, DELETE","access-control-allow-origin":"*","access-control-expose-headers":"Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required","access-control-max-age":"300","cache-control":"no-cache, no-store","www-authenticate":"Basic realm=\"Stripe\"","strict-transport-security":"max-age=31556926; includeSubDomains; preload"},"statusCode":401},"rawType":"invalid_request_error","headers":{"server":"nginx","date":"Sat, 28 Dec 2019 17:38:07 GMT","content-type":"application/json","content-length":"343","connection":"keep-alive","access-control-allow-credentials":"true","access-control-allow-methods":"GET, POST, HEAD, OPTIONS, DELETE","access-control-allow-origin":"*","access-control-expose-headers":"Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required","access-control-max-age":"300","cache-control":"no-cache, no-store","www-authenticate":"Basic realm=\"Stripe\"","strict-transport-security":"max-age=31556926; includeSubDomains; preload"},"statusCode":401,"type":"StripeAuthenticationError","status":"error"}
+Error: You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.
+    at IncomingMessage.<anonymous> (/Users/abdulaliyev/tut/node/travel-portal/node_modules/stripe/lib/StripeResource.js:162:21)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) 
+2019-12-28 12:48:51.289 ERROR Invalid currency: uds. Stripe currently supports these currencies: usd, aed, afn, all, amd, ang, aoa, ars, aud, awg, azn, bam, bbd, bdt, bgn, bif, bmd, bnd, bob, brl, bsd, bwp, bzd, cad, cdf, chf, clp, cny, cop, crc, cve, czk, djf, dkk, dop, dzd, egp, etb, eur, fjd, fkp, gbp, gel, gip, gmd, gnf, gtq, gyd, hkd, hnl, hrk, htg, huf, idr, ils, inr, isk, jmd, jpy, kes, kgs, khr, kmf, krw, kyd, kzt, lak, lbp, lkr, lrd, lsl, mad, mdl, mga, mkd, mmk, mnt, mop, mro, mur, mvr, mwk, mxn, myr, mzn, nad, ngn, nio, nok, npr, nzd, pab, pen, pgk, php, pkr, pln, pyg, qar, ron, rsd, rub, rwf, sar, sbd, scr, sek, sgd, shp, sll, sos, srd, std, szl, thb, tjs, top, try, ttd, twd, tzs, uah, ugx, uyu, uzs, vnd, vuv, wst, xaf, xcd, xof, xpf, yer, zar, zmw, eek, lvl, svc, vef, ltl
+{"raw":{"message":"Invalid currency: uds. Stripe currently supports these currencies: usd, aed, afn, all, amd, ang, aoa, ars, aud, awg, azn, bam, bbd, bdt, bgn, bif, bmd, bnd, bob, brl, bsd, bwp, bzd, cad, cdf, chf, clp, cny, cop, crc, cve, czk, djf, dkk, dop, dzd, egp, etb, eur, fjd, fkp, gbp, gel, gip, gmd, gnf, gtq, gyd, hkd, hnl, hrk, htg, huf, idr, ils, inr, isk, jmd, jpy, kes, kgs, khr, kmf, krw, kyd, kzt, lak, lbp, lkr, lrd, lsl, mad, mdl, mga, mkd, mmk, mnt, mop, mro, mur, mvr, mwk, mxn, myr, mzn, nad, ngn, nio, nok, npr, nzd, pab, pen, pgk, php, pkr, pln, pyg, qar, ron, rsd, rub, rwf, sar, sbd, scr, sek, sgd, shp, sll, sos, srd, std, szl, thb, tjs, top, try, ttd, twd, tzs, uah, ugx, uyu, uzs, vnd, vuv, wst, xaf, xcd, xof, xpf, yer, zar, zmw, eek, lvl, svc, vef, ltl","param":"line_items[0][currency]","type":"invalid_request_error","headers":{"server":"nginx","date":"Sat, 28 Dec 2019 17:48:51 GMT","content-type":"application/json","content-length":"881","connection":"keep-alive","access-control-allow-credentials":"true","access-control-allow-methods":"GET, POST, HEAD, OPTIONS, DELETE","access-control-allow-origin":"*","access-control-expose-headers":"Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required","access-control-max-age":"300","cache-control":"no-cache, no-store","request-id":"req_4cmdbulL6BmHUG","stripe-version":"2019-12-03","strict-transport-security":"max-age=31556926; includeSubDomains; preload"},"statusCode":400,"requestId":"req_4cmdbulL6BmHUG"},"rawType":"invalid_request_error","param":"line_items[0][currency]","headers":{"server":"nginx","date":"Sat, 28 Dec 2019 17:48:51 GMT","content-type":"application/json","content-length":"881","connection":"keep-alive","access-control-allow-credentials":"true","access-control-allow-methods":"GET, POST, HEAD, OPTIONS, DELETE","access-control-allow-origin":"*","access-control-expose-headers":"Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required","access-control-max-age":"300","cache-control":"no-cache, no-store","request-id":"req_4cmdbulL6BmHUG","stripe-version":"2019-12-03","strict-transport-security":"max-age=31556926; includeSubDomains; preload"},"requestId":"req_4cmdbulL6BmHUG","statusCode":400,"type":"StripeInvalidRequestError","status":"error"}
+Error: Invalid currency: uds. Stripe currently supports these currencies: usd, aed, afn, all, amd, ang, aoa, ars, aud, awg, azn, bam, bbd, bdt, bgn, bif, bmd, bnd, bob, brl, bsd, bwp, bzd, cad, cdf, chf, clp, cny, cop, crc, cve, czk, djf, dkk, dop, dzd, egp, etb, eur, fjd, fkp, gbp, gel, gip, gmd, gnf, gtq, gyd, hkd, hnl, hrk, htg, huf, idr, ils, inr, isk, jmd, jpy, kes, kgs, khr, kmf, krw, kyd, kzt, lak, lbp, lkr, lrd, lsl, mad, mdl, mga, mkd, mmk, mnt, mop, mro, mur, mvr, mwk, mxn, myr, mzn, nad, ngn, nio, nok, npr, nzd, pab, pen, pgk, php, pkr, pln, pyg, qar, ron, rsd, rub, rwf, sar, sbd, scr, sek, sgd, shp, sll, sos, srd, std, szl, thb, tjs, top, try, ttd, twd, tzs, uah, ugx, uyu, uzs, vnd, vuv, wst, xaf, xcd, xof, xpf, yer, zar, zmw, eek, lvl, svc, vef, ltl
+    at Function.generate (/Users/abdulaliyev/tut/node/travel-portal/node_modules/stripe/lib/Error.js:52:16)
+    at IncomingMessage.<anonymous> (/Users/abdulaliyev/tut/node/travel-portal/node_modules/stripe/lib/StripeResource.js:168:39)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) 
+2019-12-28 12:53:10.142 ERROR You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.
+{"raw":{"message":"You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.","type":"invalid_request_error","headers":{"server":"nginx","date":"Sat, 28 Dec 2019 17:53:10 GMT","content-type":"application/json","content-length":"343","connection":"keep-alive","access-control-allow-credentials":"true","access-control-allow-methods":"GET, POST, HEAD, OPTIONS, DELETE","access-control-allow-origin":"*","access-control-expose-headers":"Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required","access-control-max-age":"300","cache-control":"no-cache, no-store","www-authenticate":"Basic realm=\"Stripe\"","strict-transport-security":"max-age=31556926; includeSubDomains; preload"},"statusCode":401},"rawType":"invalid_request_error","headers":{"server":"nginx","date":"Sat, 28 Dec 2019 17:53:10 GMT","content-type":"application/json","content-length":"343","connection":"keep-alive","access-control-allow-credentials":"true","access-control-allow-methods":"GET, POST, HEAD, OPTIONS, DELETE","access-control-allow-origin":"*","access-control-expose-headers":"Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required","access-control-max-age":"300","cache-control":"no-cache, no-store","www-authenticate":"Basic realm=\"Stripe\"","strict-transport-security":"max-age=31556926; includeSubDomains; preload"},"statusCode":401,"type":"StripeAuthenticationError","status":"error"}
+Error: You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.
+    at IncomingMessage.<anonymous> (/Users/abdulaliyev/tut/node/travel-portal/node_modules/stripe/lib/StripeResource.js:162:21)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) 
+2019-12-28 15:23:18.389 ERROR /Users/abdulaliyev/tut/node/travel-portal/views/_reviewCard.pug:4
+    2|   .reviews__card
+    3|     .reviews__avatar
+  > 4|       img.reviews__avatar-img(src=`/img/users/${review.user.photo}`, alt=`${review.user.name}`)
+    5|       h6.reviews__user= review.user.name
+    6|     p.reviews__text= review.review
+    7|     .reviews__rating
+
+Cannot read property 'photo' of null
+{"path":"/Users/abdulaliyev/tut/node/travel-portal/views/_reviewCard.pug","statusCode":500,"status":"error"}
+TypeError: /Users/abdulaliyev/tut/node/travel-portal/views/_reviewCard.pug:4
+    2|   .reviews__card
+    3|     .reviews__avatar
+  > 4|       img.reviews__avatar-img(src=`/img/users/${review.user.photo}`, alt=`${review.user.name}`)
+    5|       h6.reviews__user= review.user.name
+    6|     p.reviews__text= review.review
+    7|     .reviews__rating
+
+Cannot read property 'photo' of null
+    at Object.pug_interp [as reviewCard] (eval at wrap (/Users/abdulaliyev/tut/node/travel-portal/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:11:113)
+    at eval (eval at wrap (/Users/abdulaliyev/tut/node/travel-portal/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:354:25)
+    at eval (eval at wrap (/Users/abdulaliyev/tut/node/travel-portal/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:365:4)
+    at template (eval at wrap (/Users/abdulaliyev/tut/node/travel-portal/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:439:146)
+    at Object.exports.renderFile (/Users/abdulaliyev/tut/node/travel-portal/node_modules/pug/lib/index.js:427:38)
+    at Object.exports.renderFile (/Users/abdulaliyev/tut/node/travel-portal/node_modules/pug/lib/index.js:417:21)
+    at View.exports.__express [as engine] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/pug/lib/index.js:464:11)
+    at View.render (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/response.js:1012:7)
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/viewsController.js:38:19
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+2019-12-28 15:23:18.847 ERROR Cat't find /tour/img/favicon.png on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /tour/img/favicon.png on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 15:28:08.112 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 15:55:14.561 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 15:55:35.311 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 16:12:26.737 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 16:12:44.245 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 16:29:32.502 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 16:30:38.060 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 16:30:39.392 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 16:31:08.102 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 16:35:40.951 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-28 16:35:42.963 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-29 11:49:01.008 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-29 11:49:01.106 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-29 11:52:45.211 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-29 11:55:00.289 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-29 18:32:22.275 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-29 19:28:07.900 ERROR Cat't find /img/users/ on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/users/ on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-29 20:01:03.661 ERROR Model[key].find is not a function
+{"statusCode":500,"status":"error"}
+TypeError: Model[key].find is not a function
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/handlerFactory.js:82:49
+    at /Users/abdulaliyev/tut/node/travel-portal/utils/catchAsync.js:3:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10)
+    at /Users/abdulaliyev/tut/node/travel-portal/controllers/authController/restrictTo.js:20:5
+    at /Users/abdulaliyev/tut/node/travel-portal/utils/catchAsync.js:3:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:317:13)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 
+2019-12-29 20:04:33.591 ERROR Cat't find /api/v1/booking/5e0944b42cb48751e73cf8ff on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /api/v1/booking/5e0944b42cb48751e73cf8ff on this server.
+    at /Users/abdulaliyev/tut/node/travel-portal/app.js:136:5
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/tut/node/travel-portal/node_modules/express/lib/router/index.js:275:10) 

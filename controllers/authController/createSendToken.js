@@ -5,6 +5,7 @@ const createSendToken = (user, statusCode, req, res) => {
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES_IN
   });
+
   // Set expiration date of a cookie to days specified in .env file
   const cookieOptions = {
     expires: new Date(
@@ -14,9 +15,8 @@ const createSendToken = (user, statusCode, req, res) => {
     // If connection is secure, express will automatically attach .secure to request
     // But in heroku this won't work, but heroku will set x-forwarded-proto to "https"
     // if connection is secure
-    secure: req.secure || req.headers('x-forwarded-proto') === 'https'
+    secure: req.secure || req.headers['x-forwarded-proto'] === 'https'
   };
-
   res.cookie('jwt', token, cookieOptions);
 
   // Delete password from user object

@@ -20,9 +20,9 @@ const globalErrorHandler = require('./controllers/errorController');
 const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
+const bookingRouter = require('./routes/bookingRoutes');
 const viewsRouter = require('./routes/viewRoutes');
 const tourShape = require('./models/shapes/tourShape');
-// const Configs = require('./models/configsModel');
 
 const app = express();
 
@@ -129,6 +129,7 @@ app.use('/', viewsRouter);
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
+app.use('/api/v1/bookings', bookingRouter);
 // If none of the routes matched, apply catch all route and generate an error
 app.all('*', (req, res, next) => {
   next(
