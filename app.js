@@ -1,48 +1,67 @@
-const express = require('express');
-const morgan = require('morgan');
-const rateLimit = require('express-rate-limit');
-const helmet = require('helmet');
-const mongoSanitize = require('express-mongo-sanitize');
-const xss = require('xss-clean');
-const hpp = require('hpp');
+const express = require("express");
+const morgan = require("morgan");
+const rateLimit = require("express-rate-limit");
+const helmet = require("helmet");
+const mongoSanitize = require("express-mongo-sanitize");
+const xss = require("xss-clean");
+const hpp = require("hpp");
+const { ApolloServer, gql } = require("apollo-server-express");
+const { makeExecutableSchema } = require("graphql-tools");
+const bodyParser = require("body-parser");
+const resolvers = require("./graphql/resolvers");
+const typeDefs = require("./graphql/typeDefs");
 
 const {
   toMilliseconds,
   AppError,
   onMaliciousActivity,
   blockBlacklistedIps
-} = require('./utils');
-const globalErrorHandler = require('./controllers/errorController');
-const tourRouter = require('./routes/tourRoutes');
-const userRouter = require('./routes/userRoutes');
-const reviewRouter = require('./routes/reviewRoutes');
-const tourShape = require('./models/shapes/tourShape');
+} = require("./utils");
+const globalErrorHandler = require("./controllers/errorController");
+const tourRouter = require("./routes/tourRoutes");
+const userRouter = require("./routes/userRoutes");
+const reviewRouter = require("./routes/reviewRoutes");
+const tourShape = require("./models/shapes/tourShape");
+
 // const Configs = require('./models/configsModel');
 
+/*=================*/
+/* APPOLLO SERVER  */
+/*=================*/
+const apolloServer = new ApolloServer({ typeDefs, resolvers });
+
+/*======*/
+/* APP  */
+/*======*/
 const app = express();
+/*##################*/
 
 /*===================*/
 /* GLOBAL MIDDLEWARE */
 /*===================*/
+
+// Apply apollo server middleware
+apolloServer.applyMiddleware({ app });
+
 // Set security HTTP headers
 app.use(helmet());
 
 // Development logging to console
-if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'));
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
 }
 
 // Limit requests from same API
 const limiter = rateLimit({
   max: 100,
-  windowMs: toMilliseconds('1 hour'),
-  message: 'Too many requests from this IP, please try again in an hour.'
+  windowMs: toMilliseconds("1 hour"),
+  message: "Too many requests from this IP, please try again in an hour."
 });
-app.use('/api', limiter);
+app.use("/api", limiter);
 
 // Body parser - reading data from http body into req.body and limiting it
 // If data is more that the set limit, it will not be accepted
-app.use(express.json({ limit: '10kb' }));
+app.use(express.json({ limit: "10kb" }));
 
 // Data sanitization agains NoSQL query injection
 app.use(mongoSanitize({}, onMaliciousActivity));
@@ -82,13 +101,14 @@ app.use(blockBlacklistedIps);
 /*========*/
 /* ROUTES */
 /*========*/
-app.use('/api/v1/tours', tourRouter);
-app.use('/api/v1/users', userRouter);
-app.use('/api/v1/reviews', reviewRouter);
+app.use("/api/v1/tours", tourRouter);
+app.use("/api/v1/users", userRouter);
+app.use("/api/v1/reviews", reviewRouter);
+
 // If none of the routes matched, apply catch all route and generate an error
-app.all('*', (req, res, next) => {
+app.all("*", (req, res, next) => {
   next(
-    new AppError(`Cat't find ${req.originalUrl} on this server.`, 404, 'A-01')
+    new AppError(`Cat't find ${req.originalUrl} on this server.`, 404, "A-01")
   );
 });
 

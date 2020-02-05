@@ -2547,3 +2547,440 @@ SyntaxError: Unexpected token e in JSON at position 288
     at IncomingMessage.emit (events.js:203:15)
     at endReadableNT (_stream_readable.js:1129:12)
     at process._tickCallback (internal/process/next_tick.js:63:19) 
+2020-01-29 20:52:14.120 ERROR Cat't find / on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find / on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-29 20:52:14.643 ERROR Cat't find /favicon.ico on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /favicon.ico on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-29 20:53:57.773 ERROR Cat't find /img/user.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/user.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-29 20:53:58.137 ERROR Cat't find /img/tour-1-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-1-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-29 20:53:58.147 ERROR Cat't find /img/tour-2-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-2-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-29 20:53:58.150 ERROR Cat't find /img/tour-3-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-3-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-29 20:53:58.152 ERROR Cat't find /img/tour-6-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-6-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-29 20:53:58.154 ERROR Cat't find /img/tour-4-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-4-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-29 20:53:58.156 ERROR Cat't find /img/tour-5-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-5-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:23:58.560 ERROR Cat't find /img/user.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/user.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:23:58.829 ERROR Cat't find /img/tour-1-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-1-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:23:58.834 ERROR Cat't find /img/tour-2-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-2-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:23:58.837 ERROR Cat't find /img/tour-3-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-3-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:23:58.840 ERROR Cat't find /img/tour-4-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-4-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:23:58.844 ERROR Cat't find /img/tour-5-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-5-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:23:58.849 ERROR Cat't find /img/tour-6-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-6-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:24:03.683 ERROR Cat't find /img/user.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/user.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:24:03.763 ERROR Cat't find /img/tour-1-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-1-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:24:03.766 ERROR Cat't find /img/tour-2-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-2-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:24:03.769 ERROR Cat't find /img/tour-4-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-4-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:24:03.771 ERROR Cat't find /img/tour-3-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-3-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:24:03.774 ERROR Cat't find /img/tour-5-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-5-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
+2020-01-31 22:24:03.775 ERROR Cat't find /img/tour-6-cover.jpg on this server.
+{"statusCode":404,"status":"fail","isOperational":true,"errorCode":"A-01"}
+Error: Cat't find /img/tour-6-cover.jpg on this server.
+    at app.all (/Users/abdulaliyev/web-projects/travel-portal/server/app.js:91:5)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/abdulaliyev/web-projects/travel-portal/server/node_modules/express/lib/router/index.js:275:10) 
