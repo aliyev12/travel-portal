@@ -6,6 +6,7 @@ const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
   type Tour {
+    id: ID!
     name: String!
     duration: Int
     maxGroupSize: Int
@@ -36,9 +37,9 @@ const typeDefs = gql`
   }
 
   type Location {
+    _id: String
     type: String
     coordinates: [Float]
-    _id: String
     description: String
     day: Int
   }

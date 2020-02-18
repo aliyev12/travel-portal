@@ -5,7 +5,6 @@ const resolvers = {
   Query: {
     getAllTours: async (parent, args, context, info) => {
       const tours = await Tour.find();
-      console.log(JSON.stringify(tours));
       return tours;
     }
   }
