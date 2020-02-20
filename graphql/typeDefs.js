@@ -46,6 +46,7 @@ const typeDefs = gql`
 
   type Query {
     getAllTours: [Tour]
+    getTour(slug: String!): Tour
   }
 `;
 

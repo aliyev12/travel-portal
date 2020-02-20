@@ -6,6 +6,13 @@ const resolvers = {
     getAllTours: async (parent, args, context, info) => {
       const tours = await Tour.find();
       return tours;
+    },
+
+    getTour: async (parent, args, context, info) => {
+      const slug = args.slug;
+      // const tour = await Tour.findById(id);
+      const tour = await Tour.findOne({ slug: slug });
+      return tour;
     }
   }
 };
