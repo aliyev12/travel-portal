@@ -143,12 +143,12 @@ tourSchema.pre(/^find/, function(next) {
 /* POPULATE GUIDES IN TOURS - PRE SAVE */
 /*=====================================*/
 
-// // Find each user by id in guides array and reassign the guides array with array of actual User objects
-// tourSchema.pre('save', async function(next) {
-//   const guidesPromises = this.guides.map(async id => await User.findById(id));
-//   this.guides = await Promise.all(guidesPromises);
-//   next();
-// });
+// Find each user by id in guides array and reassign the guides array with array of actual User objects
+tourSchema.pre("save", async function(next) {
+  const guidesPromises = this.guides.map(async id => await User.findById(id));
+  this.guides = await Promise.all(guidesPromises);
+  next();
+});
 
 const Tour = mongoose.model("Tour", tourSchema);
 

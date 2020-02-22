@@ -26,7 +26,7 @@ const typeDefs = gql`
     slug: String
     startLocation: StartLocation
     locations: [Location]
-    guides: [String]
+    guides: [Guide]
   }
 
   type StartLocation {
@@ -47,6 +47,24 @@ const typeDefs = gql`
   type Query {
     getAllTours: [Tour]
     getTour(slug: String!): Tour
+  }
+
+  enum AllowedRoles {
+    user
+    guide
+    lead_guide
+    admin
+  }
+
+  type Guide {
+    id: ID!
+    role: AllowedRoles
+    name: String!
+    email: String!
+    photo: String
+    createdAt: String
+    updatedAt: String
+    _id: String
   }
 `;
 

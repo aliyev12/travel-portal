@@ -1,10 +1,10 @@
-const validator = require('validator');
+const validator = require("validator");
 
 const configsShape = {
   ipsBlacklist: {
     type: [String],
     default: []
-  },
+  }
   // name: {
   //   type: String,
   //   required: [true, 'Please, tell us your name.']
@@ -21,7 +21,7 @@ const configsShape = {
   // },
   // role: {
   //   type: String,
-  //   enum: ['user', 'guide', 'lead-guide', 'admin'],
+  //   enum: ['user', 'guide', 'lead_guide', 'admin'],
   //   default: 'user'
   // },
   // password: {

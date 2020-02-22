@@ -1,8 +1,8 @@
-const crypto = require('crypto');
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
-const userShape = require('./shapes/userShape');
-const { toMilliseconds } = require('../utils');
+const crypto = require("crypto");
+const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
+const userShape = require("./shapes/userShape");
+const { toMilliseconds } = require("../utils");
 
 const userSchema = new mongoose.Schema(userShape, {
   timestamps: true,
@@ -10,9 +10,11 @@ const userSchema = new mongoose.Schema(userShape, {
   toObject: { virtuals: true }
 });
 
-userSchema.pre('save', async function(next) {
+/* Comment both ppre save hooks if you are importing test data.. */
+// COMMENT OUT START HERE .......
+userSchema.pre("save", async function(next) {
   // Only run this function if password was actually modified
-  if (!this.isModified('password')) return next();
+  if (!this.isModified("password")) return next();
 
   // Hash the password with cost of 12
   this.password = await bcrypt.hash(this.password, 12);
@@ -21,13 +23,14 @@ userSchema.pre('save', async function(next) {
   next();
 });
 
-userSchema.pre('save', function(next) {
-  if (!this.isModified('password') || this.isNew) return next();
+userSchema.pre("save", function(next) {
+  if (!this.isModified("password") || this.isNew) return next();
   // Subtracting 1 second will always ensure that the passwordChangedAt will be not
   // before token exp date, otherwise if db takes longer, users will never be able to log in.
-  this.passwordChangedAt = Date.now() - toMilliseconds('1 second');
+  this.passwordChangedAt = Date.now() - toMilliseconds("1 second");
   next();
 });
+//...... COMMENT OUT END HERE.
 
 userSchema.methods.correctPassword = async function(
   candidatePassword,
@@ -53,14 +56,14 @@ userSchema.methods.changedPasswordAfter = async function(JWTTimestamp) {
 };
 
 userSchema.methods.createPasswordResetToken = async function() {
-  const resetToken = crypto.randomBytes(32).toString('hex');
+  const resetToken = crypto.randomBytes(32).toString("hex");
 
   this.passwordResetToken = crypto
-    .createHash('sha256')
+    .createHash("sha256")
     .update(resetToken)
-    .digest('hex');
+    .digest("hex");
 
-  this.passwordResetExpires = Date.now() + toMilliseconds('10 minutes');
+  this.passwordResetExpires = Date.now() + toMilliseconds("10 minutes");
 
   return resetToken;
 };
@@ -71,6 +74,6 @@ userSchema.pre(/^find/, function(next) {
   next();
 });
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model("User", userSchema);
 
 module.exports = User;

@@ -1,9 +1,9 @@
-const { catchAsync, AppError, APIFeatures } = require('../utils');
+const { catchAsync, AppError, APIFeatures } = require("../utils");
 
 const docNotFound = (name, id) =>
   new AppError(`${name} with ID ${id} was not found.`, 404);
 
-exports.deleteOne = Model => 
+exports.deleteOne = Model =>
   catchAsync(async (req, res, next) => {
     const key = Object.keys(Model)[0];
     const doc = await Model[key].findByIdAndDelete(req.params.id);
@@ -11,7 +11,7 @@ exports.deleteOne = Model =>
     if (!doc) return next(docNotFound(key, req.params.id));
 
     res.status(204).json({
-      status: 'success',
+      status: "success",
       data: null
     });
   });
@@ -28,9 +28,8 @@ exports.getOne = (Model, populateOptions) =>
     const doc = await query;
 
     if (!doc) return next(docNotFound(key, req.params.id));
-
     res.status(200).json({
-      status: 'success',
+      status: "success",
       data: {
         [key.toLowerCase()]: doc
       }
@@ -51,7 +50,7 @@ exports.updateOne = Model =>
     if (!doc) return next(docNotFound(key, req.params.id));
 
     res.status(200).json({
-      status: 'success',
+      status: "success",
       data: {
         [key.toLowerCase()]: doc
       }
@@ -64,7 +63,7 @@ exports.createOne = Model =>
     const newSome = await Model[key].create(req.body);
 
     res.status(201).json({
-      status: 'success',
+      status: "success",
       data: {
         [key.toLowerCase()]: newSome
       }
@@ -86,14 +85,14 @@ exports.getAll = Model =>
       .limitFields()
       .paginate();
 
-    const doc = await features.query
+    const doc = await features.query;
 
     // // Use this one below with ".explain()" for information about querying etc
     // const doc = await features.query.explain();
 
     // SEND RESPONSE
     res.status(200).json({
-      status: 'success',
+      status: "success",
       results: doc ? doc.length : 0,
       data: { [key.toLowerCase()]: doc }
     });

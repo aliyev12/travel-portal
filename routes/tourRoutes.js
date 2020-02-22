@@ -1,38 +1,38 @@
-const express = require('express');
-const tourController = require('../controllers/tourController');
-const authController = require('../controllers/authController');
-const reviewRouter = require('../routes/reviewRoutes');
+const express = require("express");
+const tourController = require("../controllers/tourController");
+const authController = require("../controllers/authController");
+const reviewRouter = require("../routes/reviewRoutes");
 
 const router = express.Router();
 
-router.use('/:tourId/reviews', reviewRouter);
+router.use("/:tourId/reviews", reviewRouter);
 
 router
-  .route('/top-5-cheap')
+  .route("/top-5-cheap")
   .get(tourController.aliasTopTours, tourController.getAllTours);
 
-router.route('/tour-stats').get(tourController.getTourStats);
+router.route("/tour-stats").get(tourController.getTourStats);
 
 router
-  .route('/monthly-plan/:year')
+  .route("/monthly-plan/:year")
   .get(
     authController.protectRoute,
-    authController.restrictTo('admin', 'lead-guide', 'guide'),
+    authController.restrictTo("admin", "lead_guide", "guide"),
     tourController.getMonthlyPlan
   );
 
-router.route('/distances/:latlng/unit/:unit').get(tourController.getDistances);
+router.route("/distances/:latlng/unit/:unit").get(tourController.getDistances);
 
 router
-  .route('/tours-within/:distance/center/:latlng/unit/:unit')
+  .route("/tours-within/:distance/center/:latlng/unit/:unit")
   .get(tourController.getToursWithin);
 
 router
-  .route('/')
+  .route("/")
   .get(tourController.getAllTours)
   .post(
     authController.protectRoute,
-    authController.restrictTo('admin', 'lead-guide'),
+    authController.restrictTo("admin", "lead_guide"),
     tourController.createTour
   );
 
@@ -41,13 +41,13 @@ router
   .get(tourController.getTour)
   .patch(
     authController.protectRoute,
-    authController.restrictTo('admin', 'lead-guide'),
+    authController.restrictTo("admin", "lead_guide"),
     tourController.validateId,
     tourController.updateTour
   )
   .delete(
     authController.protectRoute,
-    authController.restrictTo('admin', 'lead-guide'),
+    authController.restrictTo("admin", "lead_guide"),
     tourController.validateId,
     tourController.deleteTour
   );
